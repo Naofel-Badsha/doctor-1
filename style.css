@@ -402,6 +402,132 @@ section:nth-child(even){
 
 
 
+/*----------Booking-----------Section-----------Start-------------*/
+.Book .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Book .row .image{
+    flex: 1 1 45rem;
+}
+
+.Book .row .image img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.Book .row form{
+    flex: 1 1 45rem; 
+    margin-top: 40px;
+    background: #e6cccc; 
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.Book .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    font-style: italic; 
+}
+
+.Book .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.7rem;
+    color: var(--black);
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.Book .row form .btn{
+    padding: 1.4rem;
+}
+/*----------Booking-----------Section-----------End-------------*/
+
+
+
+
+/*-----------Review-----------Section-------------Start------------*/
+.Review .box-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.Review .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2.5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.Review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .5rem solid #fff;
+}
+
+.Review .box-container .box h3{
+    color: #ffff;
+    font-size: 2.6rem;
+    padding: .5rem 0;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.Review .box-container .box  .stars{
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.Review .box-container .box .text{
+    color: var(--black);
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-top: 4rem;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.Review .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    background: var(--green);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+/*-----------Review-----------Section-------------End------------*/
+
+
+
+
+
 
 
 
